@@ -11,6 +11,7 @@
         <module>xiqianblog-security</module>
         <module>xiqianblog-tools</module>
         <module>xiqianblog-webservice</module>
+        <module>xiqianblog-confserverr</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -29,7 +30,13 @@
 
     <dependencyManagement>
         <dependencies>
-
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>Finchley.SR1</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 </project>
