@@ -6,9 +6,11 @@ import org.springframework.cloud.config.server.EnableConfigServer;
 
 @SpringBootApplication
 @EnableConfigServer     // 使服务成为 Spring Cloud Config 服务
-public class ConfigServerApplication {
+public class ConfigServerApplication
+{
 
-    public static void main(String[] args) {
+    public static void main(String[] args)
+    {
         SpringApplication.run(ConfigServerApplication.class, args);
     }
 }
