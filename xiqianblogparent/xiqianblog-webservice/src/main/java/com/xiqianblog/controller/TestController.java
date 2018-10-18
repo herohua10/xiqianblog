@@ -1,7 +1,9 @@
 package com.xiqianblog.controller;
 
 import com.xiqianblog.message.common.ServerResponse;
-import io.swagger.annotations.*;
+import com.xiqianblog.service.impl.UserServiceImpl;
+import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,6 +13,9 @@ import java.util.Arrays;
 @RestController
 public class TestController
 {
+	@Autowired
+	private UserServiceImpl userServiceImpl;
+
     @ApiOperation(value = "测试POST接口", notes = "测试一下POST接口", tags = "Test",httpMethod = "POST")
     @RequestMapping(value = "/api/testPostMethod", method = RequestMethod.POST)
     public ServerResponse testPostMethod()
@@ -38,4 +43,11 @@ public class TestController
     {
         return ServerResponse.createBySuccessMessage("小火鸡，成功啦！");
     }
+
+	@ApiOperation(value = "测试data接口", notes = "测试一下data接口", tags = "Test", httpMethod = "POST")
+	@RequestMapping(value = "/api/testData", method = RequestMethod.POST)
+	public ServerResponse testData()
+	{
+		return ServerResponse.createBySuccess("查询成功", userServiceImpl.queryUser());
+	}
 }
