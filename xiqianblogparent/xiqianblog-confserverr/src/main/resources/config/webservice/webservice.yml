@@ -4,5 +4,7 @@ spring:
     url: jdbc:mysql://47.100.178.192:33306/xqzx
     username: root
     password: xqzx@123
-
-
+mybatis:
+  mapper-locations: classpath:mybatis/*.xml
+#  config-location: classpath:config/setting/mybatis_config.xml
+  type-aliases-package: com.xiqianblog.datamodel
