@@ -1,0 +1,13 @@
+server:
+  port: 9999
+spring:
+  application:
+    name: discoverserver
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false   #不要使用Eureka服务进行注册
+    fetch-registry: false         #不要在本地缓存注册表信息
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/myeureka/

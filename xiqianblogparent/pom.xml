@@ -8,10 +8,9 @@
     <artifactId>xiqianblog-parent</artifactId>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>xiqianblog-security</module>
-        <module>xiqianblog-tools</module>
         <module>xiqianblog-webservice</module>
         <module>xiqianblog-confserverr</module>
+        <module>xiqianblog-discoverserver</module>
     </modules>
     <packaging>pom</packaging>
 
