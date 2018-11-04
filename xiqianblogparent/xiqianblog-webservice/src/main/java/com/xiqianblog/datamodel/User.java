@@ -56,4 +56,17 @@ public class User implements Serializable
 	{
 		this.password = password;
 	}
+
+    @Override
+    public String toString()
+    {
+        StringBuilder sb = new StringBuilder();
+        sb.append("{");
+        sb.append("id:").append(id).append(",");
+        sb.append("name:").append(name).append(",");
+        sb.append("password:").append(password);
+        sb.append("}");
+
+        return sb.toString();
+    }
 }
