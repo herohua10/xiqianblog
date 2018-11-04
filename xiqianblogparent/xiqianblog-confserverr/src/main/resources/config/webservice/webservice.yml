@@ -1,3 +1,5 @@
+server:
+  port: 8080
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
@@ -5,6 +7,4 @@ spring:
     username: root
     password: xqzx@123
 mybatis:
-  mapper-locations: classpath:mybatis/*.xml
-#  config-location: classpath:config/setting/mybatis_config.xml
   type-aliases-package: com.xiqianblog.datamodel

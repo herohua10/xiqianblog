@@ -1,9 +1,7 @@
 package com.xiqianblog.dao;
 
 import com.xiqianblog.datamodel.User;
-import org.apache.ibatis.annotations.Mapper;
-
-import java.util.List;
+import tk.mybatis.mapper.common.Mapper;
 
 /**
  * 【描述内容】
@@ -13,13 +11,7 @@ import java.util.List;
  * @PackageName: com.xiqianblog.dao
  * @Date: 创建时间 2018/10/18
  */
-@Mapper
-public interface UserDao
+public interface UserDao extends Mapper<User>
 {
-	/**
-	 * 查询用户列表
-	 *
-	 * @return 用户列表
-	 */
-	List<User> queryUser();
+
 }

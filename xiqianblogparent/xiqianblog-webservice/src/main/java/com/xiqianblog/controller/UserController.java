@@ -1,21 +1,23 @@
 package com.xiqianblog.controller;
 
 import com.xiqianblog.datamodel.User;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import com.xiqianblog.message.common.User.queryUsersReq;
+import com.xiqianblog.service.UserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api")
 public class UserController
 {
-    @GetMapping("/getUser")
-    public User getUser()
+    @Autowired
+    private UserService userService;
+
+    @PostMapping("/getUsers")
+    public List<User> getUser(@RequestBody queryUsersReq req)
     {
-        User user = new User();
-        user.setId(1234);
-        user.setName("isoftstone");
-        user.setPassword("007");
-        return user;
+        return userService.queryUser();
     }
 }
