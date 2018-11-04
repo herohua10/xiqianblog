@@ -66,7 +66,12 @@
             <artifactId>mapper-spring-boot-starter</artifactId>
             <version>2.0.2</version>
         </dependency>
-
+        <!--HttpClient-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.6</version>
+        </dependency>
     </dependencies>
 
     <build>
