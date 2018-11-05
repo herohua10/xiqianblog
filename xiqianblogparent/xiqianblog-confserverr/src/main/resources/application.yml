@@ -7,5 +7,7 @@ spring:
     config:
       server:
         native:
-          search-locations: classpath:config/webservice,
-                            classpath:config/discoverserver
+          searchLocations: classpath:config/,
+                           classpath:config/webservice,
+                           classpath:config/discoverserver,
+                           classpath:config/security
