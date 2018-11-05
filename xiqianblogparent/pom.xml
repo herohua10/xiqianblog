@@ -11,6 +11,7 @@
         <module>xiqianblog-webservice</module>
         <module>xiqianblog-confserverr</module>
         <module>xiqianblog-discoverserver</module>
+        <module>xiqianblog-security</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -40,6 +41,11 @@
     </dependencyManagement>
 
     <dependencies>
+        <!--使用log4j2日志框架-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-log4j2</artifactId>
+        </dependency>
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>

@@ -1,6 +1,7 @@
 package com.xiqianblog.service;
 
 import com.xiqianblog.datamodel.User;
+import com.xiqianblog.message.common.User.QueryUsersReq;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
