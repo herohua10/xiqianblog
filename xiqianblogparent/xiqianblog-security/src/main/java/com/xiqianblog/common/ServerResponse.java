@@ -19,6 +19,8 @@ public class ServerResponse<T> implements Serializable {
     private String msg;        //响应信息
     private T data;            //响应数据
 
+    private ServerResponse() {};
+
     private ServerResponse(int status) {
         this.status = status;
     }
