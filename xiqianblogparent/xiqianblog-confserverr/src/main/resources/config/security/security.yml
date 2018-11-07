@@ -7,5 +7,6 @@ eureka:
   client:
     registerWithEureka: true
     fetchRegister: true
+    registerFetchIntervalSeconds: 5  #每隔5秒获取一次服务列表
     serviceUrl:
       defaultZone: http://localhost:9000/eureka/  #服务注册地址
