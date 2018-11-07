@@ -32,11 +32,7 @@ public class UserDao
     public List<User> queryAllUsers(QueryUsersReq req)
     {
 
-        List<ServiceInstance> webservices = discoveryClient.getInstances("webservice");
-
-        ServiceInstance instance = webservices.get(0);
-
-        String url = "http://" + instance.getHost() + ":" + instance.getPort() + "/api/getUsers";
+        String url = "http://webservice/api/getUsers";
 
         HttpHeaders httpHeaders = new HttpHeaders();
         httpHeaders.setContentType(MediaType.APPLICATION_JSON);
