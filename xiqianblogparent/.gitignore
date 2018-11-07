@@ -57,5 +57,7 @@ out
 gen
 
 .gitignore
-
-target/
+/xiqianblog-discoverserver/target/
+/xiqianblog-webservice/target/
+/xiqianblog-security/target/
+/xiqianblog-confserverr/target/

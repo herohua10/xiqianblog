@@ -41,6 +41,12 @@
     </dependencyManagement>
 
     <dependencies>
+        <dependency>
+            <groupId>com.netflix.hystrix</groupId>
+            <artifactId>hystrix-javanica</artifactId>
+            <version>1.5.9</version>
+        </dependency>
+
         <!--使用log4j2日志框架-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
