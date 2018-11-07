@@ -61,3 +61,13 @@ gen
 /xiqianblog-webservice/target/
 /xiqianblog-security/target/
 /xiqianblog-confserverr/target/
+/xiqianblog-confserverr/target/classes/
+/xiqianblog-confserverr/target/generated-sources/
+/xiqianblog-discoverserver/target/classes/
+/xiqianblog-discoverserver/target/generated-sources/
+/xiqianblog-webservice/target/classes/
+/xiqianblog-webservice/target/generated-sources/
+/xiqianblog-webservice/target/generated-test-sources/
+/xiqianblog-webservice/target/test-classes/
+/xiqianblog-security/target/classes/
+/xiqianblog-security/target/generated-sources/
