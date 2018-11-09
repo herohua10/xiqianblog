@@ -1,9 +1,0 @@
-spring:
-  application:
-    name: security
-  profiles:
-    active:
-      default
-  cloud:
-    config:
-      uri: http://127.0.0.1:8888
