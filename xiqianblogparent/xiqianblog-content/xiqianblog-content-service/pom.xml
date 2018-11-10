@@ -47,9 +47,15 @@
             <artifactId>xiqianblog-content-interface</artifactId>
             <version>${xiqianblog.version}</version>
         </dependency>
+        <!-- spring-cloud-commons -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-commons</artifactId>
+        </dependency>
+        <!-- springboot提供的微服务检测接口 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 
