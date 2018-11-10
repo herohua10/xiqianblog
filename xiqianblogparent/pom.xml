@@ -12,6 +12,7 @@
         <module>xiqianblog-registry</module>
         <module>xiqianblog-gateway</module>
         <module>xiqianblog-content</module>
+        <module>xiqianblog-common</module>
     </modules>
 
     <parent>
