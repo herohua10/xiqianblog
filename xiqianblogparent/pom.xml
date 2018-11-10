@@ -11,6 +11,7 @@
     <modules>
         <module>xiqianblog-registry</module>
         <module>xiqianblog-gateway</module>
+        <module>xiqianblog-content</module>
     </modules>
 
     <parent>
@@ -21,6 +22,8 @@
     </parent>
 
     <properties>
+        <xiqianblog.version>1.0-SNAPSHOT</xiqianblog.version>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>

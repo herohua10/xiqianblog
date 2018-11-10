@@ -3,18 +3,16 @@ package com.xiqianblog;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 /**
  * @author: Jian Hua
- * @date: 2018/11/10 15:54
+ * @date: 2018/11/10 17:31
  **/
 @SpringBootApplication
-@EnableDiscoveryClient  //向Eureka注册该服务
-@EnableZuulProxy        //使之成为zuul服务器
-public class GatewayApplication {
+@EnableDiscoveryClient
+public class ContentServiceApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(GatewayApplication.class, args);
+        SpringApplication.run(ContentServiceApplication.class, args);
     }
 }
