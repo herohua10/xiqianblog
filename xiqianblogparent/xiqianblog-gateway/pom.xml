@@ -9,13 +9,24 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>xiqianblog-registry</artifactId>
+    <artifactId>xiqianblog-gateway</artifactId>
 
     <dependencies>
-        <!-- Eureka服务 -->
+        <!-- zuul网关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <artifactId>spring-cloud-starter-zuul</artifactId>
+            <version>1.4.5.RELEASE</version>
+        </dependency>
+        <!-- Eureka客户端 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-eureka-client</artifactId>
+        </dependency>
+        <!-- springboot提供的微服务检测接口 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
 

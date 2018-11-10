@@ -1,0 +1,17 @@
+server:
+  port: 9999
+
+spring:
+  application:
+    name: xqzx-gateway
+
+eureka:
+  instance:
+    prefer-ip-address: true   #默认ip优先
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:9090/eureka/
+    registry-fetch-interval-seconds: 5    #每隔5秒拉取一次服务列表
