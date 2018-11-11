@@ -1,7 +1,7 @@
 {
-  "name": "xiqianblog-web-client",
+  "name": "xiqianblog-web-portal",
   "version": "1.0.0",
-  "description": "xiqianblog client web",
+  "description": "xiqianblog portal web",
   "author": "huajian",
   "private": true,
   "scripts": {
