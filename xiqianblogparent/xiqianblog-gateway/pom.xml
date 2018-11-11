@@ -15,8 +15,7 @@
         <!-- zuul网关 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-zuul</artifactId>
-            <version>1.4.5.RELEASE</version>
+            <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
         <!-- Eureka客户端 -->
         <dependency>
