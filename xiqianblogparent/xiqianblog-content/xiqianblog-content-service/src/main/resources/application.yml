@@ -1,9 +1,4 @@
-server:
-  port: 8090
-
 spring:
-  application:
-    name: contentservice
   datasource:
     url: jdbc:mysql://47.100.178.192:3306/xqzx
     username: root

@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: contentservice
+  profiles: dev       #配置文件环境
+  cloud:
+    config:
+      label: master   #git分支
+      uri: http://127.0.0.1:9080
