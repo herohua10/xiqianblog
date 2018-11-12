@@ -13,6 +13,7 @@
         <module>xiqianblog-gateway</module>
         <module>xiqianblog-content</module>
         <module>xiqianblog-common</module>
+        <module>xiqianblog-authentication</module>
     </modules>
 
     <parent>
