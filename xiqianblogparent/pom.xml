@@ -14,6 +14,7 @@
         <module>xiqianblog-content</module>
         <module>xiqianblog-common</module>
         <module>xiqianblog-authentication</module>
+        <module>xiqianblog-config</module>
     </modules>
 
     <parent>

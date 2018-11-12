@@ -1,0 +1,26 @@
+server:
+  port: 9080
+
+spring:
+  application:
+    name: xiqianblog-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xiqianzhongxin2018/xiqianblog/
+          search-paths: configcenter
+          username: xiqianzhongxin
+          password: xiqianzhongxin2018
+
+eureka:
+  instance:
+    prefer-ip-address: true   #默认ip优先
+    instance-id: ${spring.application.name}:${server.port}
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://127.0.0.1:9090/eureka/
+    registry-fetch-interval-seconds: 5    #每隔5秒拉取一次服务列表
+
