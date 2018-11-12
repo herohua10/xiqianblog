@@ -11,7 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class TestController {
 
     @RequestMapping("/testFirstMethod")
-    public void testFirstMethod() {
-        System.out.println("successfully");
+    public String testFirstMethod() {
+        System.out.println("test successfully");
+        return "test successfully";
     }
 }
