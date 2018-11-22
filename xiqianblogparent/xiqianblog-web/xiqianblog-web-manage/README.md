@@ -1,6 +1,6 @@
-# xiqianblog-web-manage
+# leyou-manage-web
 
-> xiqnblog manage system web
+> A Vue.js project
 
 ## Build Setup
 
